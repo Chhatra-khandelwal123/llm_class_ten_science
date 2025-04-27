@@ -39,3 +39,57 @@ This app uses the **RAG (Retrieval-Augmented Generation)** architecture:
 
 ## 📂 Project Structure
 
+ncert-science-qa/
+│
+├── 📂 books/                  
+│   └── *.pdf                 # All chapters of the Class 10 NCERT Science textbook (PDF files)
+│
+├── 📄 app.py                 
+│   └── Main Streamlit application implementing RAG-based QA
+│
+├── 📄 requirement.text       
+│   └── List of Python packages required to run the app (should be renamed to requirements.txt)
+│
+└── 📄 README.md              
+    └── Project documentation (you’ll place the README I gave you here)
+
+
+🧪 Example Questions You Can Ask
+"What is the role of the placenta during pregnancy?"
+
+"Explain the law of conservation of energy with an example."
+
+"What happens during rusting of iron?"
+
+"What is the difference between AC and DC current?"
+
+
+🛠️ Tech Stack
+
+Component	Technology
+Interface	Streamlit
+PDF Parsing	pdfplumber
+Embeddings	SentenceTransformers (all-MiniLM-L6-v2)
+Vector Search	FAISS
+QA Model	distilBERT (SQuAD fine-tuned)
+RAG Pipeline	Custom implementation
+
+
+📌 To-Do / Future Improvements
+ Switch to more powerful models (e.g. GPT-4 or mistral)
+
+ Support for Hindi/other languages
+
+ Chapter-wise navigation
+
+ Upload custom textbooks
+
+ Deploy to Hugging Face Spaces or Streamlit Cloud
+
+🤝 Contributing
+Contributions are welcome! Feel free to open an issue or submit a pull request if you'd like to help improve the project.
+
+
+🌟 Star this Repository
+If you found this project helpful or interesting, please consider giving it a ⭐ on GitHub. It helps others discover it too!
+
